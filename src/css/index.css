@@ -43,7 +43,6 @@ body {
 }
 
 .carousel__videoContainer {
-  overflow: hidden;
   scroll-snap-align: start;
 }
 
