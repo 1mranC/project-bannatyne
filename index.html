@@ -12,56 +12,33 @@
     <div id="app">
       <ul class="carousel__container">
         <li class="carousel__videoContainer">
-          <video
-            width="375"
-            height="667"
-            autoplay
-            muted
-            disablePictureInPicture
-            src="2.mp4"
-          ></video>
+          <video muted playsinline disablePictureInPicture src="2.mp4"></video>
         </li>
         <li class="carousel__videoContainer">
-          <video
-            width="375"
-            height="667"
-            autoplay
-            muted
-            disablePictureInPicture
-            src="/2.mp4"
-          ></video>
+          <video autoplay muted disablePictureInPicture src="/2.mp4"></video>
         </li>
         <li class="carousel__videoContainer">
-          <video
-            width="375"
-            height="667"
-            autoplay
-            muted
-            disablePictureInPicture
-            src="/2.mp4"
-          ></video>
+          <video autoplay muted disablePictureInPicture src="/2.mp4"></video>
         </li>
         <li class="carousel__videoContainer">
-          <video
-            width="375"
-            height="667"
-            autoplay
-            muted
-            disablePictureInPicture
-            src="/2.mp4"
-          ></video>
+          <video autoplay muted disablePictureInPicture src="/2.mp4"></video>
         </li>
         <li class="carousel__videoContainer">
-          <video
-            width="375"
-            height="667"
-            autoplay
-            muted
-            disablePictureInPicture
-            src="/2.mp4"
-          ></video>
+          <video autoplay muted disablePictureInPicture src="/2.mp4"></video>
         </li>
       </ul>
     </div>
+
+    <script>
+      const videos = document.querySelectorAll(
+        ".carousel__videoContainer video"
+      );
+
+      // videos.forEach((video) => {
+      //   video.width = window.innerWidth;
+      //   video.height = window.innerHeight;
+      //   console.log(video);
+      // });
+    </script>
   </body>
 </html>

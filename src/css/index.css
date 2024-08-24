@@ -35,20 +35,23 @@ body {
 .carousel__container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-rows: 100dvh;
-  max-height: 100dvh;
+  grid-auto-rows: 100vh;
+  max-height: 100vh;
 
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
 }
 
 .carousel__videoContainer {
+  position: relative;
   scroll-snap-align: start;
+  background: black;
+  height: 100%;
 }
 
 .carousel__videoContainer video {
-  height: 100%;
+  object-fit: fill;
+  position: absolute;
   width: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: 100%;
 }
